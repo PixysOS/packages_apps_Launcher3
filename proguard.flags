@@ -2,6 +2,10 @@
   *;
 }
 
+-keep class com.android.launcher3.graphics.FixedScaleDrawable {
+  public <init>(...);
+}
+
 # Proguard will strip new callbacks in LauncherApps.Callback from
 # WrappedCallback if compiled against an older SDK. Don't let this happen.
 -keep class com.android.launcher3.compat.** {

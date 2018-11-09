@@ -18,8 +18,6 @@ package com.android.launcher3;
 
 import static com.android.launcher3.ItemInfoWithIcon.FLAG_ICON_BADGED;
 
-import com.android.internal.util.pixys.PixysUtils;
-
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
@@ -780,7 +778,7 @@ public final class Utilities {
 
     public static boolean showQSB(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
-        if (!PixysUtils.isPackageInstalled(context, SEARCH_PACKAGE)) {
+        if (!LauncherAppState.getInstanceNoCreate().isSearchAppAvailable()) {
             return false;
         }
         return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);

@@ -64,6 +64,9 @@
     <string name="app_filter_class" translatable="false"></string>
     <string name="icon_provider_class" translatable="false">com.aosp.launcher.icons.ThirdPartyIconProvider</string>
     <string name="drawable_factory_class" translatable="false">com.aosp.launcher.icons.ThirdPartyDrawableFactory</string>
+    <string name="app_filter_class" translatable="false">com.android.launcher3.security.hidelock.HiddenAppsFilter</string>
+    <string name="icon_provider_class" translatable="false">com.android.launcher3.icons.ThirdPartyIconProvider</string>
+    <string name="drawable_factory_class" translatable="false">com.android.launcher3.icons.ThirdPartyDrawableFactory</string>
     <string name="user_event_dispatcher_class" translatable="false"></string>
     <string name="stats_log_manager_class" translatable="false"></string>
     <string name="app_transition_manager_class" translatable="false"></string>

@@ -87,4 +87,8 @@
         android:title="Developer Options"
         android:fragment="com.android.launcher3.settings.DeveloperOptionsFragment"/>
 
+    <Preference
+        android:key="pref_hidelock_apps"
+        android:title="@string/hidelock_apps_manager_name" />
+
 </androidx.preference.PreferenceScreen>

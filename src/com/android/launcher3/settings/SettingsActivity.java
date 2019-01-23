@@ -27,6 +27,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -39,6 +40,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.graphics.GridOptionsProvider;
+import com.android.launcher3.security.hidelock.HideLockAppsActivity;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
 
@@ -71,6 +73,7 @@ public class SettingsActivity extends Activity
     public static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
+    public static final String KEY_HIDELOCK_APPS = "pref_hidelock_apps";
 
     public static final String MINUS_ONE_KEY = "pref_enable_minus_one";
 
@@ -183,6 +186,14 @@ public class SettingsActivity extends Activity
          */
         protected boolean initPreference(Preference preference) {
             switch (preference.getKey()) {
+                case KEY_HIDELOCK_APPS:
+                    preference.setOnPreferenceClickListener(p -> {
+                    Intent intent = new Intent(getActivity(), HideLockAppsActivity.class);
+                    startActivity(intent);
+                        return true;
+                    });
+                    return true;
+            }
                 case NOTIFICATION_DOTS_PREFERENCE_KEY:
                     if (!Utilities.ATLEAST_OREO ||
                             getContext().getSystemService(ActivityManager.class).isLowRamDevice() ||

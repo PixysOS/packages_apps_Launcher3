@@ -3264,8 +3264,9 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
         View view = getChildAt(getCurrentPage());
         if (view instanceof CellLayout) {
             return ((CellLayout) view).getShortcutsAndWidgets();
+        } else {
+            return null;
         }
-        return null;
     }
 
     void updateShortcuts(ArrayList<ShortcutInfo> shortcuts) {

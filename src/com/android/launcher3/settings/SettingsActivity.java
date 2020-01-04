@@ -116,14 +116,17 @@ public class SettingsActivity extends Activity
     }
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
+        switch (key) {
+            case Utilities.KEY_SHOW_SEARCHBAR:
+            case Utilities.KEY_DOCK_SEARCH:
+	    case Utilities.KEY_DT_GESTURE:
+	    case Utilities.KEY_NOTIFICATION_GESTURE:
+	    case Utilities.ICON_SIZE:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
-        } else if (Utilities.KEY_DT_GESTURE.equals(key)) {
-                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
-        } else  if (Utilities.KEY_NOTIFICATION_GESTURE.equals(key)) {
-        } else  if (Utilities.ICON_SIZE.equals(key)) {
-                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
-        }
+                break;
+            default:
+                break;
+         }
     }
 
     @Override
@@ -304,9 +307,12 @@ public class SettingsActivity extends Activity
                         AppReloader.get(mContext).reload();
                         return true;
                     });
+                case Utilities.KEY_DOCK_SEARCH:
+                        return true;
                 case Utilities.KEY_ALLOW_ALL_APPS_BLUR:
                 case Utilities.KEY_ALL_APPS_BLUR:
                     return PixysUtils.supportsBlur();
+
             }
             return true;
         }

@@ -295,6 +295,10 @@ public class SettingsActivity extends Activity
                     return true;
             }
                 case KEY_HIDELOCK_APPS:
+                    preference.setTitle(Utilities.isDeviceSecured(getActivity()) ?
+                        R.string.hidelock_apps_manager_name : R.string.hide_apps_manager_name);
+                    preference.setSummary(Utilities.isDeviceSecured(getActivity()) ?
+                        R.string.hidelock_apps_manager_summary : R.string.hide_apps_manager_summary);
                     preference.setOnPreferenceClickListener(p -> {
                         Utilities.showAuthScreen(getActivity(),
                                 getString(R.string.hidelock_apps_manager_name), () -> {

@@ -44,6 +44,7 @@
     <string name="trust_apps_info_hidden">Hidden apps and their  widgets are hidden from the drawer</string>
     <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
     <string name="trust_apps_manager_name_dialog">Protected app</string>
+    <string name="trust_app_summary">Hide &amp; protect apps for moar security</string>
 
     <!-- Gradients on Workspace/Hotseat -->
     <string name="workspace_gradient_title">Show gradient on top</string>

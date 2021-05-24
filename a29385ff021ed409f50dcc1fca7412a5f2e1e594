@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46c7a2c6_628e1c43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000063
+      },
+      "writtenOn": "2021-05-24T07:30:39Z",
+      "side": 1,
+      "message": "Commit https://github.com/PixysOS/packages_apps_Launcher3/commit/128f5354bc01a75a1059b3bb33362bd8061886f6 moved them to system_ext but flag was not changed accordingly",
+      "revId": "a29385ff021ed409f50dcc1fca7412a5f2e1e594",
+      "serverId": "dc9c43de-f401-424a-9bd3-945633c9f028"
+    }
+  ]
+}

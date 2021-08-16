@@ -53,6 +53,24 @@
     <string name="icon_size_title">Kích cỡ biểu tượng</string>
     <!-- Blur radius -->
     <string name="enable_blur_all_apps_title">Enable blur in app drawer</string>
+    <string name="enable_blur_overview_title">Bật hiệu ứng mờ khi đang ở danh sách ứng dụng</string>
+    <string name="enable_blur_summary">Làm hình nền mất nét</string>
+    <string name="all_apps_blur_radius_title">Hiệu ứng mờ của tất cả ứng dụng</string>
+    <string name="all_apps_blur_radius_summary">Làm hình nền trong suốt hoặc mờ đi</string>
+    <string name="overview_blur_radius_title">Lượng mờ của tất cả</string>
+    <string name="overview_blur_radius_summary">Làm hình nền trong suốt hoặc mờ đi</string>
     <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Đề xuất</string>
+    <string name="suggestion_pref_screen_desc">Đối với tất cả ứng dụng &amp; Đề xuất ở màn hình chính</string>
+    <string name="drawer_category">Drawer tất cả ứng dụng</string>
+    <string name="misc_category">linh tinh</string>
+    <string name="actions_category">Hành động</string>
     <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Ứng dụng bị ẩn</string>
+    <string name="trust_apps_auth_manager">Mở khoá để cài đặt ứng dụng bị ẩn</string>
+    <string name="trust_apps_loading">Đang tải\u2026</string>
+    <string name="trust_apps_no_lock_error">Hãy cài đặt một loại khoá màn hình để hạn chế quyền truy cập ứng dụng</string>
+    <string name="trust_apps_help">Trợ giúp</string>
+    <string name="trust_app_summary">Ẩn ứng dụng khỏi màn hình chính</string>
+    <string name="trust_apps_info_hidden">Ứng dụng bị ẩn và widget của nó sẽ bị ẩn khỏi màn hình chính</string>
 </resources>

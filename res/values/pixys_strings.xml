@@ -106,4 +106,8 @@
 
     <!-- SmartSpace -->
     <string name="smartspace_preferences" translatable="false">Preferences</string>
+
+    <!-- Recents Memory -->
+    <string name="pref_recents_show_memory_title">Show Free RAM in recents</string>
+    <string name="pref_recents_show_memory_summary">Show available free RAM in recents view</string>
 </resources>

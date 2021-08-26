@@ -75,6 +75,13 @@
         android:defaultValue="true"
         android:persistent="true" />
 
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_recents_show_memory"
+            android:persistent="true"
+            android:summary="@string/pref_recents_show_memory_summary"
+            android:title="@string/pref_recents_show_memory_title"/>
+
    <SwitchPreference
         android:key="pref_add_icon_to_home"
         android:title="@string/auto_add_shortcuts_label"

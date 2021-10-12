@@ -30,6 +30,13 @@
         android:summaryOn="@string/settings_edit_allow_summary_on"
         android:summaryOff="@string/settings_edit_allow_summary_off" />
 
+    <SwitchPreference
+        android:key="pref_dock_search"
+        android:title="@string/dock_search_title"
+        android:summary="@string/dock_search_summary"
+        android:defaultValue="true"
+        android:persistent="true" />
+
     <com.android.launcher3.settings.NotificationDotsPreference
         android:key="pref_icon_badging"
         android:title="@string/notification_dots_title"
@@ -67,6 +74,13 @@
         android:title="@string/allow_rotation_title"
         android:defaultValue="true"
         android:persistent="true" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_recents_show_memory"
+            android:persistent="true"
+            android:summary="@string/pref_recents_show_memory_summary"
+            android:title="@string/pref_recents_show_memory_title"/>
 
    <SwitchPreference
         android:key="pref_add_icon_to_home"

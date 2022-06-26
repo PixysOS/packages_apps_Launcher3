@@ -18,7 +18,7 @@
 -->
 <resources>
     <string name="google_folder_title">Google</string>
-    <string name="title_show_google_app">Deslizar para acceder a la app de Google</string>
-    <string name="msg_minus_one_on_left">Desde la pantalla de inicio deslizar a la izquierda para acceder a la app de Google</string>
-    <string name="msg_minus_one_on_right">Desde la pantalla de inicio deslizar a la derecha para abrir la app de Google</string>
+    <string name="title_show_google_app">Desliza para acceder a la app de Google</string>
+    <string name="msg_minus_one_on_left">Desde la pantalla de inicio, deslice hacia la izquierda para abrir la app de Google</string>
+    <string name="msg_minus_one_on_right">Desde la pantalla de inicio, deslice hacia la derecha para abrir la app de Google</string>
 </resources>
